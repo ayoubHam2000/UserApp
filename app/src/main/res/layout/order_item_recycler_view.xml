@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/productNameCommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sandwish"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/detailCommanded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sauss with bla bla \n dfgfsdfg \n tretherth"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/productNameCommand"
+            app:layout_constraintTop_toBottomOf="@+id/productNameCommand" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout">
+
+        <ImageView
+            android:id="@+id/removeCommand"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/quantityCommanded"
+            app:layout_constraintStart_toEndOf="@+id/quantityCommanded"
+            app:layout_constraintTop_toTopOf="@+id/quantityCommanded"
+            app:srcCompat="@color/red" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/removeCommand"
+            app:layout_constraintEnd_toEndOf="@+id/removeCommand"
+            app:layout_constraintStart_toStartOf="@+id/removeCommand"
+            app:layout_constraintTop_toTopOf="@+id/removeCommand"
+            app:srcCompat="@drawable/removewhite" />
+
+        <ImageView
+            android:id="@+id/addCommand"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/removeCommand"
+            app:layout_constraintStart_toEndOf="@+id/removeCommand"
+            app:layout_constraintTop_toTopOf="@+id/removeCommand"
+            app:srcCompat="@color/green" />
+
+        <TextView
+            android:id="@+id/quantityCommanded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20.00 * 3"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/addCommand"
+            app:layout_constraintEnd_toEndOf="@+id/addCommand"
+            app:layout_constraintStart_toStartOf="@+id/addCommand"
+            app:layout_constraintTop_toTopOf="@+id/addCommand"
+            app:srcCompat="@drawable/addblack" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout2">
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="80.00"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/priceUnitCommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginBottom="24dp"
+            android:text="MAD"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/totalPrice"
+            app:layout_constraintStart_toEndOf="@+id/totalPrice" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

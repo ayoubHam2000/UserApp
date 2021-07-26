@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="appName">UserApp</string>
+
+    <!--//layout -->
+    <string name="require">*exiger</string>
+    <string name="optional">optionnel</string>
+    <string name="french">Française</string>
+    <string name="english">Anglais</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="order_review">Revue de \n la command</string>
+    <string name="categoriy_plate">Catégorie / plat</string>
+    <string name="total">TOTAL</string>
+    <string name="command">Commander</string>
+    <string name="name">Nom</string>
+    <string name="price">Prix</string>
+    <string name="with">Avec</string>
+    <string name="add">AJOUTER</string>
+
+
+    <!--//app -->
+    <string name="elements">élément(s)</string>
+    <string name="sentence">est requis choisir au moins</string>
+
+</resources>

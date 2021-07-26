@@ -1,0 +1,218 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.userApp.Fragments.DetailFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/divider9"
+            app:layout_constraintStart_toStartOf="@+id/propertiesRecyclerView"
+            app:layout_constraintTop_toBottomOf="@+id/productNameDetailHead" />
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/detailResultRecyclerView"
+            app:layout_constraintTop_toBottomOf="@+id/divider7"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/productNameDetailHead"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="Sandwish"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/NumberWedgit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/NumberWedgit"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/divider7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@color/gray1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/demandCount"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+                app:layout_constraintEnd_toStartOf="@+id/addButton"
+                app:layout_constraintStart_toEndOf="@+id/removeButton"
+                app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+            <ImageView
+                android:id="@+id/addButton"
+                android:layout_width="28dp"
+                android:layout_height="0dp"
+                android:src="@color/green"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+            <ImageView
+                android:id="@+id/removeButton"
+                android:layout_width="24dp"
+                android:layout_height="0dp"
+                android:src="@color/red"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+                app:layout_constraintStart_toStartOf="@+id/imageView18"
+                app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/addblack"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/addButton"
+                app:layout_constraintEnd_toEndOf="@+id/imageView18"
+                app:layout_constraintStart_toEndOf="@+id/demandCount"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/removewhite"
+                app:layout_constraintBottom_toBottomOf="@+id/removeButton"
+                app:layout_constraintEnd_toStartOf="@+id/demandCount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/productNameDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Sandwish"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider8"
+            app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/with"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/productNameDetail"
+            app:layout_constraintStart_toStartOf="@+id/productNameDetail"
+            app:layout_constraintTop_toBottomOf="@+id/productNameDetail" />
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/detailResultRecyclerView"
+            app:layout_constraintStart_toStartOf="@+id/detailResultRecyclerView"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/detailResultRecyclerView"
+            android:scrollbars="vertical"
+            android:layout_width="175dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/divider10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider9" />
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/detailTotalPrice"
+            app:layout_constraintEnd_toEndOf="@+id/detailResultRecyclerView"
+            app:layout_constraintStart_toStartOf="@+id/detailResultRecyclerView" />
+
+        <Button
+            android:id="@+id/addToCommandButton"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_un_active"
+            android:text="@string/add"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/divider10"
+            app:layout_constraintStart_toStartOf="@+id/divider10" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/propertiesRecyclerView"
+            android:scrollbars="vertical"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/divider8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+        <TextView
+            android:id="@+id/detailTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+30MAD"
+            android:textColor="@color/green"
+            app:layout_constraintBottom_toTopOf="@+id/addToCommandButton"
+            app:layout_constraintEnd_toEndOf="@+id/addToCommandButton"
+            app:layout_constraintStart_toStartOf="@+id/addToCommandButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    tools:context=".Controller.MainActivity">
+
+    <TextView
+        android:id="@+id/productNameRemove"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="84dp"
+        android:text="TYPE #1"
+        android:textColor="@color/textBlue"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/productRemoveOrderButton"
+        android:layout_width="23dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:tint="@color/red"
+        app:layout_constraintBottom_toBottomOf="@+id/propertiesHintRemove"
+        app:layout_constraintStart_toEndOf="@+id/productNameRemove"
+        app:layout_constraintTop_toTopOf="@+id/productNameRemove"
+        app:srcCompat="@drawable/removewhite" />
+
+    <TextView
+        android:id="@+id/productQuantityRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="2"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/productRemoveOrderButton"
+        app:layout_constraintStart_toEndOf="@+id/productRemoveOrderButton"
+        app:layout_constraintTop_toTopOf="@+id/productRemoveOrderButton" />
+
+    <ImageView
+        android:id="@+id/productPropertiesRemove"
+        android:layout_width="15dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/propertiesHintRemove"
+        app:layout_constraintEnd_toStartOf="@+id/propertiesHintRemove"
+        app:layout_constraintTop_toTopOf="@+id/propertiesHintRemove"
+        app:srcCompat="@drawable/trigle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewOfProperties"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/productQuantityRemove"
+        app:layout_constraintStart_toStartOf="@+id/propertiesHintRemove"
+        app:layout_constraintTop_toBottomOf="@+id/propertiesHintRemove" />
+
+    <TextView
+        android:id="@+id/propertiesHintRemove"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sauss ,Size, Pisto"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/productNameRemove"
+        app:layout_constraintStart_toStartOf="@+id/productNameRemove"
+        app:layout_constraintTop_toBottomOf="@+id/productNameRemove" />
+
+    <View
+        android:id="@+id/divider14"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewOfProperties" />
+</androidx.constraintlayout.widget.ConstraintLayout>

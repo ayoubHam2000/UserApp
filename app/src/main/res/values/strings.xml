@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="appName">UserApp</string>
+
+    <!--//layout -->
+    <string name="require">*require</string>
+    <string name="optional">optional</string>
+    <string name="french">french</string>
+    <string name="english">english</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="order_review">Order \n review</string>
+    <string name="categoriy_plate">Categoriy / plate</string>
+    <string name="total">TOTAL</string>
+    <string name="command">Command</string>
+    <string name="name">Name</string>
+    <string name="price">Price</string>
+    <string name="with">With</string>
+    <string name="add">ADD</string>
+
+
+    <!--//app -->
+    <string name="elements">element(s)</string>
+    <string name="sentence">is required choose at least</string>
+
+
+
+</resources>
